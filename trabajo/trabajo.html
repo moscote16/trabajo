@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TRABAJO</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script> 
+    <style>
+        .imc-container {
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .juego-container {
+            border: 2px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body >
+    <div class="imc-container">
+    <H1>CALCULADORA IMC</H1>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre"><br><br>
+
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso"><br><br>
+
+    <label for="altura">Altura (m):</label>
+    <input type="number" id="altura"><br><br>
+
+    <button onclick="calcularIMC()">Calcular IMC</button>
+    </div>
+
+    <br>
+    <div class="juego-container">
+    <h2>Juego de Piedra, Papel o Tijeras</h2>
+    
+    <label for="jugador">Elige tu opción:</label>
+    <select id="jugador">
+        <option value="piedra">Piedra</option>
+        <option value="papel">Papel</option>
+        <option value="tijeras">Tijeras</option>
+    </select>
+    <br>
+
+    <button onclick="jugar()">Jugar</button>
+    <br>
+    <p id="resultado"></p>
+    
+    </div>
+    <div>
+        <br>
+        <h2>Adivina El Numero</h2>
+        <p>El programa ha elegido un número entre 1 y 100. ¡Adivina cuál es!</p>
+        <input type="number" id="number" min="1" max="100">
+        <button onclick="adivinar()">adivinar</button>
+        
+    </div>
+    <script src="imc.js"></script>
+</body>
+</html>
+
+
+
+
+
